@@ -73,7 +73,7 @@ docker build -t my-chat-app .
 docker run -p 9001:9001 my-chat-app
 ```
 
-## 📂 Project Structure
+##  Project Structure
 
 * `main.go`: The server logic and Redis integration.
 * `tui.go`: The Terminal User Interface client.
@@ -82,6 +82,6 @@ docker run -p 9001:9001 my-chat-app
 
 ---
 
-### 💡 Quick Tip on Your Dockerfile
+###  Quick Tip on Your Dockerfile
 
 Since you're using Redis, make sure your `Dockerfile` (or a `docker-compose.yml` if you want to be fancy) is configured to look for the Redis host via environment variables rather than `localhost`, as `localhost` inside a container refers to the container itself!
