@@ -2,21 +2,21 @@
 
 A high-performance, distributed TCP chat application written in **Go**. This project features a sleek Terminal User Interface (TUI) and uses **Redis Pub/Sub** to synchronize messages across multiple server nodes, allowing for horizontal scalability.
 
-## 🚀 Features
+## Features
 
 * **Distributed Architecture:** Multiple server instances can run simultaneously, synced via Redis.
 * **Modern TUI:** Built with `Bubble Tea` and `Lip Gloss` for a responsive, stylish terminal experience.
 * **Containerized:** Includes a `Dockerfile` for easy deployment and testing.
 * **Concurrency:** Built using Go's lightweight goroutines for handling multiple TCP connections.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Language:** Go (Golang)
 * **Backend:** TCP Sockets, Redis Pub/Sub
 * **Frontend (TUI):** [Bubble Tea](https://github.com/charmbracelet/bubbletea)
 * **Containerization:** Docker
 
-## 📦 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -64,7 +64,7 @@ To test the distributed nature, you can run two server instances on different po
 
 Messages sent to Node 1 will now appear on clients connected to Node 2!
 
-## 🐳 Docker Usage
+## Docker Usage
 
 You can build and run the chat server using Docker:
 
